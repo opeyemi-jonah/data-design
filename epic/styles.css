@@ -20,7 +20,12 @@ p{
 	margin: 20px 20px 0px 500px;
 
 }
+.index{background-color: azure}
 div{
 	background-color: snow;
 margin: 50px;
+}
+
+a:visited{
+	color: purple;
 }
