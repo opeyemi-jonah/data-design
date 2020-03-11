@@ -1,0 +1,26 @@
+h1{
+	color: #4e2680;
+}
+body{
+	background-color: snow;
+}
+.freq{
+	color: black;
+	font-family: "Times New Roman";
+	text-align: left;
+	margin: 50px 0px 0px 300px;
+}
+p{
+	margin-right: auto;
+	color: #4332ff;}
+.list{
+	background-color: snow;
+	margin-right: auto;
+	border: 7px;
+	margin: 20px 20px 0px 500px;
+
+}
+div{
+	background-color: snow;
+margin: 50px;
+}
