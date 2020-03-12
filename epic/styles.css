@@ -20,6 +20,12 @@ p{
 	margin: 20px 20px 0px 500px;
 
 }
+
+.padleft{
+
+	margin: auto;
+
+}
 .index{background-color: azure}
 div{
 	background-color: snow;
@@ -31,4 +37,7 @@ margin: 50px;
 
 a:visited{
 	color: purple;
+}
+.center{
+	text-align: center;
 }

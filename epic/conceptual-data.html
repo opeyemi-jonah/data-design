@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Conceptual Model</title>
+</head>
+<body>
+<h2>Entities & Attributes</h2>
+<ul>
+	<strong>STUDENT:</strong>
+	<li>StudentID (primary key)</li>
+	<li>First Name</li>
+	<li>Last Name</li>
+	<li>Address</li>
+	<li>CGPA</li>
+	<li>FacultyID</li>
+
+</ul>
+
+<ul>
+	<strong>COURSES:</strong>
+	<li>CourseID (primary key)</li>
+	<li>Course title</li>
+
+</ul>
+
+<ul>
+	<strong>LECTURER:</strong>
+	<li>LecturerID (primary key)</li>
+	<li>First Name</li>
+	<li>Last Name</li>
+	<li>Rank</li>
+
+</ul>
+
+<ul>
+	<strong>FACULTY:</strong>
+	<li>FacultyID (primary key)</li>
+	<li>LectureID (foreign key)</li>
+	<li>StudentID (foreign key)</li>
+	<li>CourseID (foreign key)</li>
+</ul>
+
+<h2>Relations</h2>
+<p>
+	<ul>
+	<li>One student can take n courses (1 to n)</li>
+	<li>one Faculty contains m students, n lecturers and p courses (1 to m),(1 to n),(1 to p)</li>
+
+</ul>
+</p>
+</div>
+
+</body>
+</html>
