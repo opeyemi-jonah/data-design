@@ -18,14 +18,15 @@
 <ul>
 	<strong>COURSES:</strong>
 	<li>courseId (primary key)</li>
+	<li>courseStudentId</li>
 	<li>courseTitle</li>
 
 </ul>
 
 <ul>
 	<strong>REGISTRATION:</strong>
-	<li> courseId (foreign key)</li>
-	<li>studentId (foreign key)</li>
+	<li>registrationCourseId (foreign key)</li>
+	<li>registrationStudentId (foreign key)</li>
 
 </ul>
 
@@ -35,8 +36,6 @@
 	<li>Many student can register for n courses (m to n)</li>
 	<li>A registration process has many students (1 to m) </li>
 	<li>Courses have to be registered (1 to n)</li>
-
-
 
 </ul>
 </p>
