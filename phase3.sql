@@ -4,7 +4,7 @@ DROP TABLE IF EXISTS BET;
 DROP TABLE IF EXISTS SPORT;
 DROP TABLE IF EXISTS USER;
 
-CREATE TABLE `USER` (
+CREATE TABLE `user` (
 	`userId` BINARY(16) NOT NULL ,
 	`userEmail` VARCHAR(128) NOT NULL ,
 	`userFirstName` VARCHAR(30) NOT NULL ,
@@ -14,22 +14,24 @@ CREATE TABLE `USER` (
 	INDEX (userEmail)
 );
 
-CREATE TABLE `SPORT` (
+CREATE TABLE `sport` (
 	`sportId` BINARY(16) NOT NULL ,
 	`sportLeague` VARCHAR(30) NOT NULL ,
 	`sportName` VARCHAR(30) NOT NULL,
 	PRIMARY KEY (sportId),
-	INDEX (sportName,sportLeague)
+	INDEX (sportName),
+	INDEX(sportLeague)
 );
 
-CREATE TABLE `BET` (
+CREATE TABLE `bet` (
 	`betId` BINARY(16) NOT NULL ,
 	`betUserId` BINARY(16) NOT NULL ,
 	`betType` VARCHAR(15) NOT NULL ,
 	`betSportId` BINARY(16) NOT NULL,
 	PRIMARY KEY (betId),
-	FOREIGN KEY (betSportId) REFERENCES SPORT(sportId),
-	FOREIGN KEY (betUserId) REFERENCES USER(userId),
-INDEX (betSportId,betUserId)
+	FOREIGN KEY (betSportId) REFERENCES sport(sportId),
+	FOREIGN KEY (betUserId) REFERENCES user(userId),
+INDEX (betSportId),
+INDEX(betUserId)
 );
 
